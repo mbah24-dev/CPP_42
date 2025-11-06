@@ -128,7 +128,7 @@ $ make clean
 <p>
 <strong>BAH Mamadou (mbah)</strong><br>
 Étudiant à <a href="https://42lyon.fr" target="_blank">42 Lyon</a> 🇫🇷<br>
-📧 <a href="mailto:mbah@student.42lyon.fr">mamadou.bah@student.42lyon.fr</a>
+📧 <a href="mailto:mbah@student.42lyon.fr">mbah@student.42lyon.fr</a>
 </p>
 
 ---
