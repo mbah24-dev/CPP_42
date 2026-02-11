@@ -12,15 +12,16 @@
 
 NAME	= test-GBU
 
-CC		= g++
+CC		= c++
 CFLAGS	= -Werror -Wextra -Wall -std=c++98
 
 SRC		= Account.cpp tests.cpp
+HEADERS	= Account.hpp
 OBJ		= $(SRC:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) $(HEADERS)
 	$(CC) $(CFLAGS) $(OBJ) -o $@ -I .
 
 %.o: %.cpp

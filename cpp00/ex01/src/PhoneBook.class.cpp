@@ -87,6 +87,7 @@ void PhoneBook::addEntry() {
 		return;
 	}
 
+	std::cout << "next slot: " << _nextSlot << std::endl;
 	_entries[_nextSlot] = temp;
 	_nextSlot = (_nextSlot + 1) % 8;
 	if (_storedCount < 8)
