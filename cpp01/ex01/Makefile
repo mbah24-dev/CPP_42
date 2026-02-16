@@ -16,13 +16,17 @@ CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -I inc
 
 SRC = src/main.cpp src/Zombie.cpp src/zombieHorde.cpp
+HEADERS = inc/Zombie.hpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) $(HEADERS)
 	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
 
+%.o: %.cpp $(HEADERS)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+	
 clean:
 	rm -f $(OBJ)
 
