@@ -15,6 +15,10 @@
 
 #include <string>
 
+/**
+ * @brief The ClapTrap class represents a simple robot character with basic attributes and actions.
+ * It can attack, take damage, and repair itself. Each ClapTrap has a name, hit points, energy points, and attack damage.
+ */
 class ClapTrap 
 {
 	public:
